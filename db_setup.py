@@ -56,7 +56,7 @@ engine = create_engine(url, echo=True)
 session = Session(engine)
 
 # Import the module from GitHub
-dbm = import_file('https://raw.githubusercontent.com/LordOfStupidity/InventoryManagement/main/app/Database/DatabaseTables.py')
+dbm = import_file('https://raw.githubusercontent.com/LordOfStupidity/inventoryManagement/main/app/database/DatabaseTables.py')
 
 if admin_pass and admin_user and conf_admin_pass:
 
