@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block scripts %}
+    <script src= "{{ url_for('static', filename='js/ns/namespace.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/accounts-sendText.js') }}"></script>
+{% endblock %}
+{% block content %}
+    <div id="table">
+    <h3>Low parts</h3>
+    {% if session['is_admin'] and results|length > 0 %}
+        <p id="instructions">Select user to send Low Parts list to: </p>
+        <select name="phone" id="phone">
+            {% for option in form.user %}
+                {% if loop.first %}
+                    <option value="" disabled selected>{{ form.user.label.text }}</option>
+                {% endif %}
+                    {{ option }}
+            {% endfor %}
+        </select>
+    {{ form.submitBtn }}
+    {% endif %}
+    <table class="table">
+    <th>Part Name</th><th>Part Number</th><th>Part Store</th><th>Amount</th><th>Threshold</th>
+        {% for row in results %}
+        <tr>
+            <td><a href="/parts/{{ row[0] }}">{{ row[1] }}</a></td>
+            <td>{{ row[3] }}</td>
+            <td><a href="/parts/stores/{{ row[4] }}">{{ row[4] }}</a></td>
+            <td id="lowPart">{{ row[2] }}</td>
+            <td>{{ row[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

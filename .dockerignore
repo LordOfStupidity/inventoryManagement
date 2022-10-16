@@ -1,0 +1,8 @@
+.github/
+venv/
+CODE_OF_CONDUCT.md
+README.md
+LICENSE
+database.sql
+db_setup.py
+example.env

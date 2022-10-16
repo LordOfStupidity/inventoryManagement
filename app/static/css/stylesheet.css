@@ -1,0 +1,322 @@
+#title {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#mySpan > form {
+  padding: 15px;
+}
+
+a:visited {
+  color: blue;
+}
+
+.newTypeName,.newTypeUnit {
+  display: none;
+}
+
+.partStoreName {
+  width: 100%;
+}
+
+.sidenav {
+  display: none;
+  width: 200px;
+  position: fixed;
+  margin-left: 7.5%;
+  background-color: #DDDDDD;
+  min-width: 20px;
+  margin-top: 0.7%;
+}
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  border: 0.5px solid;
+  border-color: white;
+}
+.sidenav a:hover {
+  background-color: #f1f1f1;
+}
+.main {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 85%;
+  min-height: 250px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#instructions {
+  margin-top: 3%;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.setThresh, #myThresh,#updateThresh {
+  float: left;
+}
+
+.threshold {
+  float: left;
+  display: none;
+}
+
+#newThresh, #cancelBtn, .submitBtn {
+    width: 150px;
+    float: left;
+    display: none;
+}
+
+#warning {
+    color: red;
+}
+
+.createJobBtn {
+  width: 100%;
+}
+
+#myCard, .myCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#formElement {
+  padding: 1%;
+}
+
+.users {
+  grid-column: 2;
+}
+
+.jobs {
+  grid-column: 3;
+}
+
+#lowPart {
+    color:red;
+    font-weight:bold;
+}
+
+#partCard {
+  margin-left: 15%;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+
+#mySpan {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.tableElem {
+    display: inline-block;
+    padding: 1em;
+    min-width: 1em;
+    max-width: 6em;
+}
+
+#paragraph {
+  display: block;
+}
+
+.createJobBtn {
+  margin-top: 1%;
+}
+
+#loginForm, #registerForm {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+html {
+  font-family: Arial, serif;
+}
+body {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -2%;
+}
+table {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: length 1s;
+}
+
+#info {
+  width: 1%;
+  display:inline-block;
+  white-space: nowrap;
+  margin-left: 6%;
+}
+
+.partName, .partNumber, .newPartAmount {
+  width: 50%;
+}
+
+form {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+#myName, #myNumber, #myAmount, #myType,  #myPartStore {
+    float: left;
+}
+
+#myCard {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#logoName {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 85%;
+    min-height: 50px;
+    overflow: inherit;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    background-color: #2E86C1;
+}
+
+.container {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  margin-left: -80%;
+  margin-bottom: -3.5%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.partName, .partNumber, .partStoreName, .newPartStoreImage, .confirmUpdateBtn, .cancelUpdateBtn, .newPartAmount {
+  display: none;
+}
+
+
+.confirmMe, .confirmYesBtn, .denyNoBtn, .newUnit, .confirmText, .thisYesBtn, .thisNoBtn, .confirmNote {
+    display: none;
+}
+.yesBtn {
+  color: white;
+  background-color: green;
+}
+.noBtn {
+  color: white;
+  background-color: red;
+}
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #2E86C1;
+  color: white;
+}
+.error {
+    color: red;
+}
+
+@media (orientation: portrait) {
+    #card > a > img {
+      width: 100px;
+      height: 100px;
+  }
+  #card {
+    grid-template-columns: 1fr 1fr;
+  }
+  input, button, .container {
+
+    font-size: 30px;
+  }
+  p {
+    font-size: 30px;
+  }
+  table {
+      font-size: 30px;
+  }
+
+  .topnav {
+    font-size: 40px;
+  }
+  .sidenav a {
+      font-size: 35px;
+  }
+}
+
+
+
+@media (orientation: landscape) {
+  .topnav {
+    max-width: 45%;
+    max-height: 50%;
+  }
+
+  #card > a > img {
+    width: 85%;
+    height: 200px;
+  }
+  input, button, .container {
+    font-size: 20px;
+  }
+}

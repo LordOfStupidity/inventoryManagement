@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="card">
+  <a href="/parts/stores" id="myCard"><p class="caption">Part Stores</p><img class="partStores" src="{{ url_for('static', filename='assets/stores/warehouse.svg') }}"
+    width="250px" height="250px" /></a>
+    <a href="/parts" id="myCard"><p class="caption">Parts</p><img class="parts" src="{{ url_for('static', filename='assets/toolbox.svg') }}"
+      width="250px" height="250px" /></a>
+    <a href="/parts/low" id="myCard"><p class="caption">Low Parts</p><img class="lowParts" src="{{ url_for('static', filename='assets/low-parts.svg') }}"
+      width="250px" height="250px" /></a>
+    <a href="/parts/type" id="myCard"><p class="caption">Part Types</p><img class="typeParts" src="{{ url_for('static', filename='assets/part-type.svg') }}"
+      width="250px" height="250px" /></a>
+    {% if session['is_admin'] %}
+    <a href="/users" id="myCard" class="users"><p class="caption">Users</p><img src="{{ url_for('static', filename='assets/users.svg') }}"
+      width="250px" height="250px" /></a>
+    <a href="/jobs" id="myCard" class="jobs"><p class="caption">Jobs</p><img src="{{ url_for('static', filename='assets/jobs.svg') }}"
+      width="250px" height="250px" /></a>
+    {% endif %}
+</div>
+    <p id="welcomeMsg">Welcome, <b>{{ username }}</b>.</p>
+{% endblock %}
